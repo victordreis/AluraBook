@@ -1,0 +1,51 @@
+hr{
+    margin: 0%;
+}
+.rodape{
+    background-color: var(--branco);
+    padding: 1.5em;
+    background-color: var(--cinza-claro);
+}
+.rodape__topico{
+    display: none;
+}
+@media screen and (min-width:1024px){
+    .rodape{
+        display: flex;
+        justify-content: space-between;
+        padding: 3em 1.5em 4em 1.5em ; 
+    }
+
+    .rodape__titulo{
+        font-size: 24px;
+    }
+    .rodape__topico{
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape__topico-titulo{
+        font-size: 14px;
+        color: var(--cinza);
+        text-transform: uppercase;
+    }
+    .rodape__link{
+        color:var(--cinza-escuro);
+        font-size: 14px;
+        text-decoration: none;
+        padding-left:0.5em ;
+    }
+    .rodape__topico-livros{
+        display: flex;
+        align-items: center;
+        margin: 1.5em  1em 0 0;
+    }
+}
+@media screen and (min-width:1728px){
+    .rodape{
+        padding: 4em 13%;
+    }
+    .rodape__topico{
+        border-left: 1px solid var(--cinza);
+        padding-left: 1.5em;
+    }
+}
